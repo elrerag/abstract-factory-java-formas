@@ -1,5 +1,6 @@
 package cl.lherrera.fabricas;
 
+import cl.lherrera.formas.Circulo;
 import cl.lherrera.formas.Cuadrado;
 import cl.lherrera.formas.Forma;
 import cl.lherrera.formas.Rectangulo;
@@ -16,5 +17,9 @@ public class FabricaDeFormasImpl implements FabricaDeFormas {
 		return new Rectangulo(ladoA, ladoB);
 	}
 
+	@Override
+	public Forma fabricaCirculo(double radio) {
+		return new Circulo(radio);
+	}
 
 }

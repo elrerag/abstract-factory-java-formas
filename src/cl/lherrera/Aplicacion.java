@@ -10,9 +10,11 @@ public class Aplicacion {
 		FabricaDeFormas fabricaDeFormas = new FabricaDeFormasImpl();
 		Forma cuadrado = fabricaDeFormas.fabricarCuadrado(2.0);
 		Forma rectangulo = fabricaDeFormas.fabricaRectangulo(2.0, 3.0);
+		Forma circulo = fabricaDeFormas.fabricaCirculo(1.0);
 		
 		imprimeArea(cuadrado);
 		imprimeArea(rectangulo);
+		imprimeArea(circulo);
 		
 	}
 	
